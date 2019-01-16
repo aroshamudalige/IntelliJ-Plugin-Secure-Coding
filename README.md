@@ -1,4 +1,4 @@
-# IntelliJ-Plugin-Secure-Coding
+# IntelliJ Plugin for Secure Coding
 A plugin-based framework for IntelliJ IDEA IDE which aids developers to write more secured Java codes.
 <br>User Manual - https://drive.google.com/file/d/1cPJzUHyDkpcNyn91pOEiZ8s6MdREBHO9/view?usp=sharing
 <br><br>
