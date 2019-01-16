@@ -1,0 +1,49 @@
+<idea-plugin>
+    <id>Demofinal1.Demofinal1</id>
+    <name>Framework for Secure Coding</name>
+    <version>1.2</version>
+    <vendor email="mlt.perera93@gmail.com" url="http://ucsc.cmb.ac.lk/">TeamHelixUCSC</vendor>
+
+    <description><![CDATA[
+    <html>
+        <p>
+        A plugin for IntelliJ IDEA IDE which can be used to detect real-time secure coding guideline
+        violations in Java programming language. The plugin also provides relevant counter measures
+        for the detected corresponding secure coding rule violations. The main purpose of the plugin
+        is to make Software developers aware about the concept of Secure Coding and automate the
+        current manual cheat sheet procedure  followed to detect the violations.
+        </p>
+        <p>
+        The "SEI CERT Secure Coding Rules" which are covered by the plugin are
+        ERR08J, NUM09J, ERR07J, ERR04J, EXP02J, MET09J, OBJ05J, OBJ01J, OBJ10J, DCL00J, THI00J,
+        SER01J, NUM10J, SEC07J, FIO02J.
+        </p>
+        <p>
+        After using the plugin please provide us a usability feedback by filling the following form stating any comments or improvements if necessary to be made in the future.
+        </p>
+        <br>
+        <a href="https://goo.gl/forms/4hqHsvwN9hBHslpu2"> >> Plugin usability feedback form</a>
+
+    </html>
+    ]]></description>
+
+    <change-notes><![CDATA[
+	<ul>
+        <li>1.0 - Initial deployment.</li>
+        <li>1.1 - Version compatibility added.</li>
+        <li>1.2 - Improved user interfaces and fixed some bugs.</li>
+	</ul>
+    ]]></change-notes>
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!--<toolWindow id="SCA_Tool" secondary="true" anchor="bottom" factoryClass="com.intellij.execution.dashboard.RunDashboardToolWindowFactory"/>-->
+        <toolWindow id="Secure Coding Plugin" secondary="true" anchor="bottom" icon="/images/ico-scp.png" factoryClass="Tools.MyToolWindowFactory"/>
+    </extensions>
+
+    <actions>
+        <action class="Tools.LiveParser" id="OnTheFlyMechanism" text="OnTheFlyMechanism" >
+        </action>
+    </actions>
+
+</idea-plugin>

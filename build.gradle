@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.3.9'
+}
+
+group 'org.seproject'
+version '1.2'
+
+sourceCompatibility = 1.8
+
+repositories { 
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.github.javaparser:javaparser-symbol-solver-core:3.6.8'
+}
+
+
+intellij {
+    version '2018.2'
+    pluginName 'Framework for Secure Coding'
+}
+patchPluginXml {
+    changeNotes """
+      Improved user interfaces and fixed some bugs."""
+}
